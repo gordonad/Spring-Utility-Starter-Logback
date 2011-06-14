@@ -1,0 +1,32 @@
+<configuration>
+<!-- Full Details on Layout Patterns at:
+     http://logback.qos.ch/manual/layouts.html -->
+
+<!--
+ConvSpec 	 LoggerName	          Result
+===========  ====================  ====================
+%logger	     myPkg.sub.sample.Bar  myPkg.sub.sample.Bar
+%logger{0}	 myPkg.sub.sample.Bar  Bar
+%logger{5}	 myPkg.sub.sample.Bar  m.s.s.Bar
+%logger{10}	 myPkg.sub.sample.Bar  m.s.s.Bar
+%logger{15}	 myPkg.sub.sample.Bar  m.s.sample.Bar
+%logger{16}	 myPkg.sub.sample.Bar  m.sub.sample.Bar
+%logger{36}	 myPkg.sub.sample.Bar  myPkg.sub.sample.Bar
+-->
+
+<!-- To enable JMX Managment
+	<jmxConfigurator />
+-->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%-5level %logger{5} - %msg%n%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.chariot" level="debug" />
+	<logger name="org.springframework" level="warn"/>
+
+	<root level="warn">
+		<appender-ref ref="console" />
+	</root>
+</configuration>
