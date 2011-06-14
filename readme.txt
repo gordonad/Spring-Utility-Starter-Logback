@@ -45,5 +45,10 @@ Building the Project from command prompt:
 --------------------
    mvn clean install
 
-
-
+STS Tips:
+--------
+* Right click on project > Maven > Enable Dependency Management
+* Right click on project > Properties > Spring > Beans Support > Click "scan"
+     to discover and add xml files to STS
+* Preferenes > Maven > Installations > Add your Maven directory
+     do NOT use the built in version
