@@ -19,6 +19,7 @@ Features:
 * Enforces Java & Maven versions
 * Banned Dependency "commons-logging"
 * Eclipse & IntelliJ IDEA plugins
+* 15-Jun-2011 - Banned Dependency: "log4j"
 
 
 Important Files:
