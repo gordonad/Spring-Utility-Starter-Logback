@@ -172,11 +172,6 @@
 			</dependency>
 			<!-- Logging with SLF4J and LogBack -->
 			<dependency>
-				<groupId>log4j</groupId>
-				<artifactId>log4j</artifactId>
-				<version>${log4j.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>jcl-over-slf4j</artifactId>
 				<version>${slf4j.version}</version>
@@ -347,6 +342,7 @@
 								<bannedDependencies>
 									<excludes>
 										<exclude>commons-logging:commons-logging</exclude>
+										<exclude>log4j:log4j</exclude>
 									</excludes>
 								</bannedDependencies>
 								<requireMavenVersion>
