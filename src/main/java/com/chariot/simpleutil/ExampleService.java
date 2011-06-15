@@ -18,6 +18,6 @@ public class ExampleService implements Service {
 
 	@Override
 	public String toString() {
-		return "ExampleService [message=" + message + "]";
+		return "ExampleService [message=" + getMessage() + "]";
 	}
 }

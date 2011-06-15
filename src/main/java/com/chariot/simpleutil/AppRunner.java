@@ -18,7 +18,8 @@ public class AppRunner {
 
 		Service service = applicationContext.getBean(Service.class);
 
-		logger.debug("Yeah I got your service bean... right here: {}", service);
+		logger.debug("Yeah I got your service bean... right here: {}",
+				service.toString());
 
 		// Your Code here!
 
