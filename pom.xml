@@ -9,6 +9,17 @@
 	<packaging>jar</packaging>
 	<name>Spring Utility Logback Sample</name>
 	<url>http://www.chariotsolutions.com</url>
+	<developers>
+		<developer>
+			<id>gordon.dickens</id>
+			<name>Gordon Dickens</name>
+			<email>gdickens@chariotsolutions.com</email>
+			<roles>
+				<role>Author</role>
+			</roles>
+			<organization>http://www.chariotsolutions.com</organization>
+		</developer>
+	</developers>
 	<description>
 		<![CDATA[
       This project is a minimal jar utility with Spring configuration.
@@ -32,6 +43,7 @@
 		<maven.dependency.plugin>2.1</maven.dependency.plugin>
 		<maven.eclipse.plugin>2.8</maven.eclipse.plugin>
 		<maven.enforcer.plugin>1.0</maven.enforcer.plugin>
+		<maven.exec.plugin>1.2</maven.exec.plugin>
 		<maven.idea.plugin>2.2</maven.idea.plugin>
 		<maven.jar.plugin>2.3.1</maven.jar.plugin>
 		<maven.resources.plugin>2.4.3</maven.resources.plugin>
@@ -326,6 +338,11 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>${maven.resources.plugin}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${maven.exec.plugin}</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
