@@ -4,10 +4,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.chariotsolutions.apps</groupId>
-	<artifactId>spring-utility</artifactId>
+	<artifactId>spring-utility-logback-sample</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Spring Utility</name>
+	<name>Spring Utility Logback Sample</name>
 	<url>http://www.chariotsolutions.com</url>
 	<description>
 		<![CDATA[
